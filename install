@@ -1,6 +1,8 @@
 #!/bin/sh
 # =============================================================================
 # Laptop Setup Script
+# Download: curl --remote-name https://raw.githubusercontent.com/maxholdaway/mac/refs/heads/main/install
+# Run: sh install 2>&1 | tee ~/Desktop/laptop.log
 # =============================================================================
 
 set -e  # Exit on error
