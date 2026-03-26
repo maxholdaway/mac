@@ -98,7 +98,6 @@ install_cask "slack"
 install_cask "discord"
 install_cask "whatsapp"
 install_cask "zoom"
-install_cask "skype"
 install_cask "sonos"
 install_cask "spotify"
 install_cask "dropbox"
@@ -271,18 +270,6 @@ go install github.com/google/pprof@latest
 install_formula "golangci-lint"
 install_formula "golang-migrate"
 
-# =============================================================================
-# PYTHON & PIP TOOLS
-# =============================================================================
-section "Python Tools"
-
-if ! command -v pip3 &>/dev/null; then
-  log "Installing pip..."
-  curl https://bootstrap.pypa.io/get-pip.py -o /tmp/get-pip.py && python3 /tmp/get-pip.py
-fi
-
-pip3 install --upgrade pip
-pip3 install aws-mfa
 
 # =============================================================================
 # CLI & DEVELOPER EXPERIENCE
@@ -410,9 +397,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 EOF
 fi
-
-# git-lfs global hooks
-git lfs install
 
 # =============================================================================
 # GIT CONFIGURATION
