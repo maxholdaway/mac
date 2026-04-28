@@ -78,6 +78,7 @@ TAPS=(
   johanhaleby/kubetail  # kubetail
   hashicorp/tap         # terraform, vault
   tokiwong/tap          # helm-switcher
+  radiusmethod/awsd     # awsd
 )
 
 for tap in "${TAPS[@]}"; do
